@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# Concurrency in NodeJS
+
 You have a Node.js application that works perfectly well locally, but want to ensure that it will be able to handle the throughput required by your enormous user-base in production. An obvious way of going about this would be to use a more powerful server to host your application in. This is vertical scaling; it has the advantage of you not needing to change the application code at all - simply running it on a more powerful server that can handle a larger throughput is enough. This strategy has the potential to become very expensive very quickly, however. A much more scalable solution is horizontal scaling, which we will explore in this article. 
 
 Horizontal scaling essentially involves duplicating your application instance such that each instance can handle a part of the incoming connections. A simple example of this would be spawning a process (which runs your application instance) for each core in your machine. This means that these processes run on the same port, and a load balancer is used to distribute the incoming connections so each of the application instances in the different processes can handle a part of the load - alleviating the total load falling on a single running instance of the application. 
