@@ -33,7 +33,7 @@ A service calls `Make(peers,me,…)` to create a Raft peer. The peers argument i
 
 We use a custom RPC package that allows us to delay RPCs, re-order them, and discard them to simulate various network failures.
 
-### Persistence
+## Persistence
 
 If a Raft-based server reboots it should resume service where it left off. This requires that Raft keep persistent state that survives a reboot.
 

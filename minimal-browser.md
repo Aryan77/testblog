@@ -12,7 +12,7 @@ Since I built my own HTML/CSS parser, this browser implements a very small subse
 
 This also means that all websites will not work well - when my browser encounters something that I have not implemented in my parser, it will simply render the code as is and continue. A good indication of whether a website will work with this browser is if command line browsers like Lynx can display it properly - so most blogs and wikipedia articles will work fine and be navigable - any complex web apps that rely heavily on JavaScript will not. This is best viewed as an educational project - I would not recommend anyone try to replace their browser with this.
 
-### Features:
+## Features:
 
 Below, I describe chronologically each of the features that I implemented.
 
@@ -24,11 +24,11 @@ Below, I describe chronologically each of the features that I implemented.
 6. **CSS Parser**: Support for both linked CSS files and the inline `style` attribute in HTML tags, added support for cascading and inheritance and built a separate style sheet `browser.css` that handles the basic settings for the browser itself.
 7. **Hyperlinks, tabbed browsing, address bar, back button**: Added support for navigating to and from pages using hyperlinks, and implemented various UI improvements inspired by modern browsers - multiple tabs can now show multiple web pages, an address bar allows direct typing of web addresses instead of rebuilding the browser with a different URL, and a back button allows navigating through the history of pages visited.
 
-### Installation and running local instance:
+## Installation and running local instance:
 
 Clone this project, install `tkinter` if you have not already using `pip3 install tk` (ideally in a virtual environment) and run `./runBrowser.sh` in the `src/` directory of the project. This will open the browser, pointing to the wikipedia page for web browsers. If you would like to change the homepage, simply type the URL after the shell command. For example, to open the browser at `https://www.example.org`, run `./runBrowser.sh https://www.example.org`.
 
-### Roadmap:
+## Roadmap:
 
 I found significant parallels in building a parser for HTML and CSS, and in building interpreters for other Domain Specific Languages - the main difference arising in that the result of the parsing had to contribute to some clear visual element whereas when building an interpreter for a regular programming language we are usually done after building some sort of AST and identifying a way to recurse through it. It was, in that sense, unlike anything I had attempted before and I am very glad that I undertook this.
 

@@ -2,11 +2,10 @@
 layout: default
 ---
 
-# My Blog
+# Aryan Yadav
 
-Hi! I'm Aryan, a Master's CS student at Cornell University.
-
-I enjoy building web applications on all levels of the tech stack. I am very passionate about systems programming and cloud computing, and also occasionally dabble in machine learning.
+CS Master's student at Cornell, specializing in low-latency distributed systems and kernel architecture.
+Incoming SWE at Millennium, working on low-latency order management system for equities.
 
 - [Distributed Database Part 1 - Implementing Raft](distdb1-raft.md)
 - [Distributed Database Part 2 - Adding Fault-Tolerant Distributed Database on top of Raft](distdb2-raftdb.md)

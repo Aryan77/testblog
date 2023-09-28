@@ -20,6 +20,6 @@ A `Clerk` sometimes doesn't know which database server is the Raft leader. If th
 
 The database servers do not directly communicate; they only interact with each other through Raft.
 
-### Snapshots
+## Snapshots
 
 Upto this point, a rebooting server replays the complete Raft log in order to restore its state. However, it's not practical for a long-running server to remember the complete Raft log forever. We introduce a modification that will allow Raft and the database server to cooperate to save space: from time to time the database server will persistently store a snapshot of its current state and Raft will discard the log entries that precede that snapshot. When a server restarts, it first installs a snapshot and then replays log entries from after the point at which the snapshot was created. 

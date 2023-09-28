@@ -10,7 +10,7 @@ The sharded database will have two main components. First, a set of replica grou
 
 There is a fair bit of nuance to handling reconfiguration in this system: within a single replica group, all group members must agree on when a reconfiguration occurs relative to client requests. For example, a Put may arrive at about the same time as a reconfiguration that causes the replica group to stop being responsible for the shard holding the Put's key. All replicas in the group must agree on whether the Put occurred before or after the reconfiguration. If before, the Put should take effect and the new owner of the shard will see its effect; if after, the Put won't take effect and client must re-try at the new owner. The way this is implemented is extending Raft to not only log the sequence of operations, but also the sequence of reconfigurations, while ensuring that at most one replica group is serving requests for each shard at any one time.
 
-### Shard Controller
+## Shard Controller
 
 The implementation of the Shard Controller is in the `shard-controller/` directory.
 
@@ -26,7 +26,7 @@ The Move RPC's arguments are a shard number and a GID. The shard controller crea
 
 The Query RPC's argument is a configuration number. The shardmaster replies with the configuration that has that number. If the number is -1 or bigger than the biggest known configuration number, the shardmaster should reply with the latest configuration. The result of Query(-1) should reflect every Join, Leave, or Move RPC that the shardmaster finished handling before it received the Query(-1) RPC.
 
-### Sharded Database
+## Sharded Database
 
 With the shard-controller implemented, we can finally implement our sharded database.
 
