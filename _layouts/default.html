@@ -3,8 +3,13 @@
   <head>
     <!-- Your Google Analytics code can also go here -->
     <style>
+      @font-face {
+           font-family: 'Consolas';
+           src: url('Consolas.ttf') format('truetype');
+         }
         body {
-          font-family: Arial;
+          font-family: 'Consolas';
+          background-color: #FFF9E6;
           font-size: 16pt;
           margin: 0 auto;
           max-width: 1000px;
@@ -21,6 +26,7 @@
           text-decoration: underline;
         }
         pre code {
+        font-family: 'Consolas';
         background-color: #f4f4f4;
         display: block;
         padding: 15px;
@@ -32,7 +38,21 @@
         top: 0;
         background-color: white;
         z-index: 1000;
+        margin: 0 10px;
       }
+
+      .project-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+
+      .project-card:hover {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-4px);
+      }
+
       </style>
   </head>
   <body>
