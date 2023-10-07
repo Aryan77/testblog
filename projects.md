@@ -6,7 +6,7 @@ layout: default
 
 ## Distributed Database
 
-![](/images/distdb.png)
+<img src="/images/distdb.png" class="project-image">
 
 [Github](https://github.com/Aryan77/distributed-database)
 
@@ -18,7 +18,7 @@ A database system built from scratch which has the following features:
 
 ## Minimal Browser
 
-![](/images/mapreduce.png)
+<img src="/images/browser.png" class="project-image">
 
 [Github](https://github.com/Aryan77/minimal-browser)
 
@@ -32,7 +32,7 @@ A browser engine built from scratch in a single file of Python; I built my own H
 
 ## Ten-Tac-Toe
 
-![](/images/tentactoe.png)
+<img src="/images/tentactoe.png" class="project-image">
 
 [Github](https://github.com/ten-tac-toe) - [Live](https://ten-tac-toe-kzaqvz5yyq-ue.a.run.app)
 
@@ -40,7 +40,7 @@ Ten-Tac-Toe, more commonly known as [Ultimate Tic Tac Toe](https://en.wikipedia.
 
 ## OCaml Data Science Library
 
-![](/images/ocaml.png)
+<img src="/images/ocaml.png" class="project-image">
 
 [Github](https://github.com/Aryan77/ocaml-data-science-ml)
 
@@ -48,7 +48,7 @@ A data science + machine learning library for OCaml that replicates and combines
 
 ## MapReduce
 
-![](/images/mapreduce.png)
+<img src="/images/mapreduce.png" class="project-image">
 
 [Github](https://github.com/Aryan77/MapReduce)
 
@@ -58,7 +58,7 @@ The fact that the worker threads maintain their own local data structures and on
 
 ## CoursePlan
 
-![](/images/courseplan.png)
+<img src="/images/courseplan.png" class="project-image">
 
 [Github](https://github.com/cornell-dti/course-plan) - [Live](https://courseplan.io/)
 
